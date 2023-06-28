@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(102, 102, 104);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+}
+
+button{
+  cursor: pointer;
+}
+
+button:hover{
+  box-shadow: 1px 1px 0px black;
+}
+
+header {
+  /* background-color: #00fff7; */
+  height: 90px;
+}
+
+header nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul li {
+  margin-left: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  transition: all .5s;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: #0091ff;
+}
+
+li .entra{
+    width: 90px;
+    height: 30px;
+    border: 2px solid transparent;
+    background-color: rgb(245, 33, 33);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* .entra a:hover{
+  text-decoration: none;
+  color: black;
+} */
+li .cria{
+    width: 90px;
+    height: 30px;
+    border: 2px solid transparent;
+    background-color: rgb(98, 98, 98);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+li .entra:hover , li .cria:hover{
+    box-shadow: 1px 1px 0px black;
+}
+
+section{
+  height: calc(100vh - 90px);
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+}
+.search{
+  background-color: aqua;
+  height: 100vh;
+}
+.top{
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 90px);
+    align-items: center;
+    justify-content: center;
+    /* background-color: #0091ff; */
+}
+
+.div-sea {
+  padding: 25px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.div-sea button {
+  width: 120px;
+  height: 40px;
+  margin-top: 50px;
+  border: solid transparent;
+  background-color: rgb(241, 44, 44);
+  border-radius: 20px;
+}
+
+.div-sea h1{
+  font-size: 35px;
+}
+.div-sea  img {
+  width: 350px;
+  height: 550px;
+  border-radius: 50px;
+}
+
+.explore{
+  background-color: #0091ff;
+}
+
+.explore  button{
+  background-color: aqua;
+}
+
+.login{
+  background-image: url("../img/backgroundLogin.jpg") ;
+  background-size: cover;
+}
+.login h1{
+  font-size: 60px;
+  color: #fff;
+}
+
+.tela-login{
+  width: 400px;
+  height: 600px;
+  padding: 30px;
+  border-radius: 60px;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+}
+
+input{
+  width: calc(100% - 200px);
+  height: 30px;
+  border: solid 1px black;
+  border-radius: 12px;
+}
+
+.login .con{
+  background-color: red;
+  color: #fff;
+}
+.login .face{
+  background-color: rgb(69, 117, 230);
+  color: #fff;
+}
+.tela-login button{
+  margin: 10px;
+  width: 200px;
+  height: 25px;
+  background-color: #fff;
+}
+
+.login .gg{
+  border: solid 2px rgb(194, 194, 194);
+}
